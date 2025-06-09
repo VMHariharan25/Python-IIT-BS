@@ -1,0 +1,105 @@
+Python 
+3 Modes 
+1. Shell Mode / Interpreter 
+2. Script Mode - Microsoft Visual Code 
+3. Iron Python - Google Collab 
+
+
+Comment:-
+Comments are not part of the Execution 
+
+1. Single Line Comment 
+# Text 
+
+2. Multi Line Comments: Multi Line Comments are part of execution with certain restrictions 
+
+'''   Comment 
+
+''' 
+
+or 
+
+"""    Comment
+Multiline 
+
+""" 
+
+Variables: 
+
+Other Programming: 
+Data Type Must Be Specified; Data Type :- Type of Data that youre gonna save in the variable; 
+Types of Data 
+1. Integer  (-5, -10, 100... ) 
+2. Float (-5.3, 2.66, ... ) 
+3. Character:- one letter / number inside the quotes For Example, 'a', 'n', '1', '5'
+4. String :- Collection of Characters is called as stings For Example, "Aeiou", "$Hello$", "5.3" 
+
+# In Python everything will be treated as string; there is no character data type 
+5. Complex:- 
+Maths: -1 + 5i 
+Python: -1 + 5j 
+
+# Instead of iota ('i') in Mathematics, "j" is used in Python.
+
+Python Programming: 
+One Happy News is: No need for specifying data type 
+
+To find which kind of data is stored in the variable, we shall be using type() function 
+#Syntax: type(Variable) 
+
+Python 3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 5+2+3
+10
+>>> 2*35
+70
+>>> 5+3*2
+11
+>>> 2*3+5
+11
+>>> 2*3+6*5
+36
+>>> x = 5
+>>> 5 = x
+  File "<stdin>", line 1
+    5 = x
+    ^
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+>>> ((2*3)+5)*5
+55
+>>> x = 5
+>>> x
+5
+>>> print(5+2+3)
+10
+>>> # Single Line Comments
+>>> # Single \
+>>> """ Multi
+... Line
+... """
+' Multi \nLine \n'
+>>> '''
+...     Execution of complex Expression
+...     for understanding
+... '''
+' \n    Execution of complex Expression \n    for understanding \n'
+>>> -1 + 5j
+(-1+5j)
+>>>
+>>>
+>>>
+>>>
+>>> x = 5.6
+>>> type(x)
+<class 'float'>
+>>> y = '5.6'
+>>> type(y)
+<class 'str'>
+>>>  x = 1
+  File "<stdin>", line 1
+    x = 1
+IndentationError: unexpected indent
+>>>
+
+
+
