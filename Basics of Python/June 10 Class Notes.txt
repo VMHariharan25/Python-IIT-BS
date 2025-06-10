@@ -1,0 +1,194 @@
+>>> x = 7.5
+>>> type(x)
+<class 'float'>
+>>> id(x)
+2739537423472
+>>> x = 10
+>>> id(x)
+140735263869656
+>>> y = 10
+>>> id(y)
+140735263869656
+>>> y = y + 1
+>>> y
+11
+>>> id(y)
+140735263869688
+>>> x = y = z = 10
+>>> id(x)
+140735263869656
+>>> id(y)
+140735263869656
+>>> id(z)
+140735263869656
+>>> x, y, z = 10, 10, 10
+>>> x
+10
+>>> y
+10
+>>> z
+10
+>>> id(z)
+140735263869656
+>>> id(y)
+140735263869656
+>>> id(x)
+140735263869656
+>>> l, m, n = -1, 2.5, "Hello"
+>>> l
+-1
+>>> m
+2.5
+>>> n
+'Hello'
+>>> id(l)
+140735263869304
+>>> id(m)
+2739537423472
+>>> id(n)
+2739540877040
+>>> x = 5
+>>> x / 2
+2.5
+>>> x // 2
+2
+>>> 22/7
+3.142857142857143
+>>> 22//7
+3
+>>> -1//2
+-1
+>>> -(1//2)
+0
+>>> 22 % 7
+1
+>>> x = x / 2
+>>> x
+2.5
+>>> x = 5
+>>> type(x)
+<class 'int'>
+>>> x = x / 2
+>>> type(x)
+<class 'float'>
+>>> x
+2.5
+>>> type(x)
+<class 'float'>
+>>> x = 5
+>>> x = x // 2
+>>> type(x)
+<class 'int'>
+>>> x = 2**3  # Exponent Operator
+>>> x
+8
+>>> x = true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> x = True
+>>> x
+True
+>>> type(x)
+<class 'bool'>
+>>> x = False
+>>> Ture and True
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Ture' is not defined
+>>>  True and True
+  File "<stdin>", line 1
+    True and True
+IndentationError: unexpected indent
+>>> True and True
+True
+>>> True and False
+False
+>>> False and False
+False
+>>> False and True
+False
+>>> True or True
+True
+>>> True or False
+True
+>>> False or False
+False
+>>> False or True
+True
+>>> not True
+False
+>>> not False
+True
+>>>
+>>>
+>>>
+>>>
+>>> x = input("Enter a Number")
+Enter a Number5
+>>> type(x)
+<class 'str'>
+>>> int('5')
+5
+>>> int(5.7)
+5
+>>> int(-2.5)
+-2
+>>> x = int(input(
+... "Enter a number "))
+Enter a number 10
+>>> type(x)
+<class 'int'>
+>>> y = input("Enter another Number ")
+Enter another Number 8
+>>> y = int(y)
+>>> sum = x + y
+>>>
+>>> # Print 1
+>>> print(sum)
+18
+>>> print("Hello World")
+Hello World
+>>> print("Hello " + "World")
+Hello World
+>>> print("Hello", "World", 5)
+Hello World 5
+>>> print("Hello" + "World")
+HelloWorld
+>>> print("Hello","World",5)
+Hello World 5
+>>> print("Hello  ","World",5)
+Hello   World 5
+>>> "Hello"
+'Hello'
+>>> "%s"%"Hello"
+'Hello'
+>>> "%d"%6
+'6'
+>>> "%d %d"%(6,7)
+'6 7'
+>>> "%d - %d"%(6,7)
+'6 - 7'
+>>> "%d -"%(6,7)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: not all arguments converted during string formatting
+
+>>> print("%s %s %d"%("Hello", "World", 5))
+Hello World 5
+>>> # Print 2
+>>> print("The sum of two numbers is:", sum)
+The sum of two numbers is: 18
+>>>
+>>> # Print 3
+>>> print("The sum of two numbers is: " + str(sum))
+The sum of two numbers is: 18
+>>> h = "Hello"
+>>> w = "World"
+>>> print(f"{h} {w} {5}")
+Hello World 5
+>>> print(f"The sum of {x} and {y} is: {sum}")
+The sum of 10 and 8 is: 18
+>>> print(f"The sum of {x} and (y) is: {sum}")
+The sum of 10 and (y) is: 18
+>>>
