@@ -201,3 +201,98 @@ w = "World"
 print(f"{h} {w} {5}") 
 
 """
+
+# 12 June 2025
+"""
+>>> # Relation Expression
+>>> x = 5
+>>> # Inequalities based
+>>> x < 10
+True
+>>> # Relational Expression output: True or False
+>>> x < 5
+False
+>>> x <= 5
+True
+>>> x
+5
+>>> x = 10
+>>> x
+10
+>>> x == 10
+True
+>>> x == 5
+False
+>>> x != 5
+True  
+>>> x != 5
+True
+>>> 1 or 1
+1
+>>> 0 or 1
+1
+>>> 0 or 0
+0
+>>> 1 and 1
+1
+>>> 1 and 0
+0
+>>> # x is in the interval (0, 20]
+>>> (0 < x) and (x <= 20)
+True
+>>> 0 < x <= 20
+True
+
+On using non zero value in Relation expression, it is considered as True
+"""
+
+"""
+Conditional Statements:
+Syntax: 
+if(condition):
+    # Code to execute if condition is True
+else:
+    # Code to execute if condition is False
+
+"""
+
+# Finding the maximum of two numbers
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+if x > y:
+    print(f"{x} is greater than {y}")
+
+""">>> if( x > y ):
+...     print(f"{x} is greater")
+...
+>>> if x > y:
+...     print(f"{x} is greater")
+... else:
+...     print(f"{y} is greater")
+...
+20 is greater"""
+
+# if-elif statements
+"""
+syntax: 
+if(condition1):
+    # Code to execute if condition1 is True
+elif(condition2):
+    # Code to execute if condition2 is True
+else:
+    # Code to execute if both conditions are False
+"""
+
+# Finding the maximum of three numbers
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+z = int(input("Enter third number: "))
+if x > y and x > z:
+  print(f"{x} is the greatest")
+  x = x + 1 
+elif y > x and y > z:
+    print(f"{y} is the greatest") 
+    y = y + 1
+else:
+      print(f"{z} is the greatest")
+      z = z + 1
