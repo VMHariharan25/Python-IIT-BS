@@ -27,7 +27,7 @@ else:
 Version 2
 if((year % 100 == 0) and (year % 400 == 0)): 
     print(f"{year} is a leap year.")
-elif(year % 4 == 0):
+elif((year % 100 != 0) and (year % 4 == 0)):
     print(f"{year} is a leap year.")
 else: 
     print(f"{year} is not a leap year.")
@@ -35,7 +35,7 @@ else:
 
 """ Version 3
 if(((year % 100 == 0) and (year % 400 == 0)) 
-        or (year % 4 == 0)): 
+        or ((year % 100 != 0) and (year % 4 == 0))): 
     print(f"{year} is a leap year.")
 else: 
     print(f"{year} is not a leap year.")
@@ -53,8 +53,8 @@ Python Style:
 x = True_block if condition else False_Block 
 """
 """Version 4
-leap_year = True if(((year % 100 == 0) and (year % 400 == 0)) or (year % 4 == 0)) else False 
+leap_year = True if(((year % 100 == 0) and (year % 400 == 0)) or ((year % 100 != 0) and (year % 4 == 0))) else False 
 print(f"{year} is {'not ' if(not leap_year) else ""}a leap year.")
 """
 
-print(f"{year} is {"" if(((year % 100 == 0) and (year % 400 == 0)) or (year % 4 == 0)) else "not "}a leap year.")
+print(f"{year} is {"" if(((year % 100 == 0) and (year % 400 == 0)) or ((year % 100 != 0) and (year % 4 == 0))) else "not "}a leap year.")

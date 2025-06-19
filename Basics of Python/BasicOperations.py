@@ -298,3 +298,53 @@ else:
       z = z + 1
 
 
+# June 16 
+"""
+>>> # Range Object :- Sequence of values
+>>> # Syntax: range(start Value, End Value, step = n) 
+>>> # Start Value is optional Default:= 0
+>>>
+>>> list(range(5))
+[0, 1, 2, 3, 4]
+>>> # End Value is Mandatory
+>>> # step is also optional
+>>>
+>>>
+>>> r = range(5)
+>>> r
+range(0, 5)
+>>> type(range(r))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'range' object cannot be interpreted as an integer
+>>> type(r)
+<class 'range'>
+>>> # To convert the range to visible structure list is used. So, list() function is used
+>>> # list(range())
+>>> list(range(5))
+[0, 1, 2, 3, 4]
+>>> # range(n) => 0, 1, 2, 3, ... , n-1
+>>> # range(n,m) ==> n , n+1, n+2 , ..., m-1
+>>> list(range(1,10))
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> list(range(4,5))
+[4]
+>>> # step is optional but default is 1
+>>> list(range(2, 120, 2)
+... )
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100, 102, 104, 106, 108, 110, 112, 114, 116, 118]
+>>> list(range(2, 120, 3))
+[2, 5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 44, 47, 50, 53, 56, 59, 62, 65, 68, 71, 74, 77, 80, 83, 86, 89, 92, 95, 98, 101, 104, 107, 110, 113, 116, 119]
+>>>
+"""
+
+"""
+LOOPING: 
+Certian statement executed for predefined number of times 
+1. for Loop 
+Syntax: 
+
+for variable in iterable: 
+    loop body 
+
+"""
