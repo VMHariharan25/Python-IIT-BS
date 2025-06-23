@@ -82,5 +82,58 @@ The remove() method is used to remove the first occurrence of a specified item f
 [2, 1]
 """
 
+"""
+Vector: 
+vec(a) = x1 i + y1 j + z1 k
+vec(b) = x2 i + y2 j + z2 k
 
+vec(a) . vec(b) = x1*x2 + y1*y2 + z1*z2
+"""
+
+va = [] 
+print("Enter the values for vector a:")
+for i in range(0,3): 
+    va.append(int(input("Enter the Value")))
+
+vb = [] 
+print("Enter the values for vector b:")
+for i in range(0,3): 
+    vb.append(int(input("Enter the Value")))
+
+result = 0 
+for i in range(0,3):
+    result = result + (va[i] * vb[i])
+
+print("Vector a:", va)
+print("Vector b:", vb)
+print("The dot product of the vectors is:", result)
+
+
+"""
+>>> va = [1,2,3]
+>>> va[1]
+2
+>>> va[0]
+1
+>>> va[0:2]
+[1, 2]
+>>> va[0:3]
+[1, 2, 3]
+>>> va[0:]
+[1, 2, 3]
+>>> va[2:]
+[3]
+>>> va[-1:-2]
+[]
+>>> va[-2:-1]
+[2]
+>>> va[-3:0]
+[]
+>>> va[-3:-1]
+[1, 2]
+>>> va[-3:1]
+[1]
+>>> va[-3:0]
+[]
+"""
 
